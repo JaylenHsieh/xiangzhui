@@ -1,6 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimary">#f72323</color>
+    <color name="colorPrimaryDark">#f72323</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black_1">#323232</color>
+    <color name="black_2">#646464</color>
+    <color name="black_3">#16000000</color>
+
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="white_30">#4DFFFFFF</color>
+
+    <color name="red_cheery">#FF2D55</color>
+    <color name="red_dark">#632f2f</color>
+    <color name="orange_dark">#402200</color>
+    <color name="orange_light">#FFDA8E</color>
+
+    <color name="window_white">#FAFAFA</color>
+    <color name="grey_20_black">#cccccc</color>
+
+    <color name="divider">#F0F0F0</color>
+
+    <color name="black">#000000</color>
+    <color name="black_87">#de000000</color>
+
+    <color name="black_54">#8a000000</color>
+    <color name="black_38">#61000000</color>
+    <color name="black_26">#42000000</color>
+    <color name="black_12">#1f000000</color>
+    <color name="black_20">#33000000</color>
+
+    <color name="black_x">#16000000</color>
+
+    <color name="textPrimary">#de000000</color>
+    <color name="textCaption">#61000000</color>
+    <color name="textDisable">#42000000</color>
+
+    <color name="highlight">#FFE63939</color>
+    <color name="highlightCaption">#61E63939</color>
+
+    <color name="coral_green">#46DCDC</color>
+    <color name="coral_green_dark">#405C5B</color>
+    <color name="coral_green_transparent">#3346DCDC</color>
+    <color name="blue">#42A5F5</color>
+    <color name="blue_transparent">#3342A5F5</color>
+    <color name="coral_pink">#FF5856</color>
+    <color name="coral_pink_transparent">#33FF5856</color>
+    <color name="purple">#9C67D3</color>
+    <color name="purple_transparent">#339C67D3</color>
+    <color name="orange">#FFAE43</color>
+    <color name="orange_level">#ff8b10</color>
+    <color name="orange_transparent">#33FFAE43</color>
+    <color name="grass_green">#47ff91</color>
+    <color name="grass_green_transparent">#3386D13A</color>
+
+    <color name="grey_blue_dark">#36474F</color>
+
+
+    <color name="blue_dark">#284351</color>
+    <color name="blue_dark_s">#3E6C84</color>
+    <color name="blue_dark_alpha">#1f284351</color>
+    <color name="dark_grey_blue_70">#b3284351</color>
 </resources>

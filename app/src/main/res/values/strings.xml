@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">xiangzhui</string>
+    <string name="app_name">乡缀</string>
+    <string name="home">首页</string>
+    <string name="category">分类</string>
+    <string name="community">社区</string>
+    <string name="mine">我的</string>
+    <string name="community_content1">2020年1月31日0-24时，浙江省报告新型冠状病毒感染的肺炎新增确诊病例62例，新增出院病例6例。其中：
+
+新增确诊病例中，杭州市13例、宁波市9例、温州市14例、嘉兴市2例、绍兴市1例、金华市7例、衢州市1例、台州市14例、丽水市1例；新增出院病例中，宁波市1例、温州市1例、金华市3例、台州市1例。
+
+截至1月31日24时，浙江省累计报告新型冠状病毒感染的肺炎确诊病例599例，现有重症病例51例（其中危重10例），累计出院15例。其中：
+
+确诊病例中，杭州市98例、宁波市55例、温州市241例、湖州市6例、嘉兴市18例、绍兴市24例、金华市34例、衢州市13例、舟山市7例、台州市95例、丽水市8例；重症病例中，杭州市9例、宁波市1例、温州市18例、嘉兴市2例、绍兴市5例、金华市5例、衢州市3例、台州市6例、丽水市2例；出院病例中，宁波市1例、温州市8例、金华市3例、舟山市1例、台州市1例、丽水市1例。</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ar_ruler">AR尺子</string>
 </resources>
