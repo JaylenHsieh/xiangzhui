@@ -5,13 +5,24 @@
     <string name="community">社区</string>
     <string name="mine">我的</string>
     <string name="community_content1">2020年1月31日0-24时，浙江省报告新型冠状病毒感染的肺炎新增确诊病例62例，新增出院病例6例。其中：
-
 新增确诊病例中，杭州市13例、宁波市9例、温州市14例、嘉兴市2例、绍兴市1例、金华市7例、衢州市1例、台州市14例、丽水市1例；新增出院病例中，宁波市1例、温州市1例、金华市3例、台州市1例。
-
 截至1月31日24时，浙江省累计报告新型冠状病毒感染的肺炎确诊病例599例，现有重症病例51例（其中危重10例），累计出院15例。其中：
-
 确诊病例中，杭州市98例、宁波市55例、温州市241例、湖州市6例、嘉兴市18例、绍兴市24例、金华市34例、衢州市13例、舟山市7例、台州市95例、丽水市8例；重症病例中，杭州市9例、宁波市1例、温州市18例、嘉兴市2例、绍兴市5例、金华市5例、衢州市3例、台州市6例、丽水市2例；出院病例中，宁波市1例、温州市8例、金华市3例、舟山市1例、台州市1例、丽水市1例。</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ar_ruler">AR尺子</string>
+    <string name="text_mural_theme">壁画主题</string>
+    <string name="text_article_type">文章类型</string>
+    <string name="text_picture_type">图片类型</string>
+    <string name="text_wall_size">墙体尺寸</string>
+    <string name="text_Theme_hint">请输入主题，如：“中国梦”</string>
+    <string name="text_length">长：</string>
+    <string name="text_width">宽：</string>
+    <string name="text_seekBar">如果你知道更精确的施工尺寸，拖动此处进行微调</string>
+    <string name="text_commit">提交</string>
+    <string name="text_location">你的位置</string>
+    <string name="hangzhou">浙江省 杭州市 江干区</string>
+    <string name="text_remind">您预约的时间是：2020 年 4 月 30 日
+        \n\n当天降雨的概率：90 %，
+        \n\n建议：不适合室外绘图，请更改日期</string>
 </resources>

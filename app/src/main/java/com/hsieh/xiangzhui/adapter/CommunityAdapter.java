@@ -42,7 +42,7 @@ public class CommunityAdapter extends RecyclerView.Adapter<CommunityAdapter.View
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.community_item,parent,false);
+                .inflate(R.layout.item_community,parent,false);
         ViewHolder holder = new ViewHolder(view);
         return holder;
     }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="article_type">
+        <item>诗词歌赋</item>
+        <item>时政新闻</item>
+        <item>励志文章</item>
+        <item>回顾历史</item>
+        <item>发展成果</item>
+        <item>村容村貌</item>
+        <item>致富经验</item>
+        <item>......</item>
+    </string-array>
+
+    <string-array name="picture_type">
+        <item>自由</item>
+        <item>青春</item>
+        <item>民主</item>
+        <item>梦想</item>
+        <item>致富</item>
+        <item>法制</item>
+        <item>文化</item>
+        <item>......</item>
+    </string-array>
+</resources>

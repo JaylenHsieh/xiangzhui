@@ -45,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
                     case 1:
                         break;
                     case 2:
+                        DesignFragment designFragment = new DesignFragment();
+                        transaction.replace(R.id.container, designFragment).commit();
                         break;
                     case 3:
                         CommunityFragment communityFragment = new CommunityFragment();
