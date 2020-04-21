@@ -6,27 +6,27 @@
     android:orientation="horizontal">
 
     <LinearLayout
-        android:id="@+id/ar_ruler"
+        android:id="@+id/personal_info"
         style="@style/FunctionLayout">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/ar_ruler_new"
+            android:id="@+id/ic_personal_info_new"
             style="@style/FunctionNew" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/ic_ar_ruler"
+            android:id="@+id/ic_personal_info"
             style="@style/FunctionImage"
             android:src="@mipmap/ic_ruler" />
 
         <TextView
-            android:id="@+id/tv_ar_ruler"
+            android:id="@+id/tv_personal_info"
             style="@style/FunctionName"
             android:text="@string/ar_ruler" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/weather_reminder"
+        android:id="@+id/change_phone"
         style="@style/FunctionLayout">
 
         <ImageView
@@ -46,7 +46,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/meeting_reminder"
+        android:id="@+id/common_question"
         style="@style/FunctionLayout">
 
         <ImageView

@@ -25,42 +25,4 @@
     <string name="text_remind">您预约的时间是：2020 年 4 月 30 日
         \n\n当天降雨的概率：90 %，
         \n\n建议：不适合室外绘图，请更改日期</string>
-
-    <string name="recommend">推荐</string>
-    <string name="poverty_alleviation">脱贫攻坚</string>
-    <string name="rural_civilization">文明乡风</string>
-    <string name="filial_piety">孝老爱亲</string>
-    <string name="new_trends">树新风</string>
-    <string name="rate">评分</string>
-    <string name="mural_content">mural</string>
-
-    <string name="china_dream">中国梦</string>
-    <string name="the_true">真善美</string>
-    <string name="civilize_village">文明乡村</string>
-    <string name="national_unity">民族团结</string>
-    <string name="remain_true">不忘初心</string>
-    <string name="title_activity_weather">WeatherActivity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-
-    <string name="text_us">我们</string>
-    <string name="text_tools">工具</string>
-
-    <string name="no_design">您还没有设计过壁画哟\n快点击设计按钮设计你的第一幅壁画吧</string>
-    <string name="no_collection">您还没有收藏过壁画哟\n快点击收藏按钮收藏你喜欢的壁画吧</string>
-    <string name="no_meeting">今日没有会议</string>
-    <string name="add_meeting">添加提醒</string>
-    <string name="mural_theme">壁画主题：</string>
-    <string name="mural_size">壁画尺寸：</string>
-    <string name="mural_larger">壁画大图</string>
-    <string name="mural_detail">壁画详情：</string>
-    <string name="mural_class">壁画类型：</string>
-    <string name="mural_score">壁画评分：</string>
-    <string name="please_wait">正在为您生成壁画，请稍后...</string>
 </resources>

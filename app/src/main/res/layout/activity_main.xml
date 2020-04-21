@@ -14,6 +14,32 @@
         app:layout_constraintTop_toTopOf="parent"
         app:popupTheme="@style/Widget.AppCompat.Light.PopupMenu.Overflow" />
 
+
+    <!--    <LinearLayout-->
+<!--        style="@style/style_banner_title_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/toolbar"-->
+<!--        tools:layout_editor_absoluteX="0dp">-->
+
+<!--        &lt;!&ndash;用来显示标题的控件&ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_title"-->
+<!--            style="@style/style_banner_title"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            tools:text="我是标题！" />-->
+
+<!--        &lt;!&ndash;Banner的圆点型指示器&ndash;&gt;-->
+<!--        <com.kelin.banner.view.PointIndicatorView-->
+<!--            android:id="@+id/biv_indicator"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:pointRadius="3dp"-->
+<!--            app:pointSpacing="4dp"-->
+<!--            app:selectedPointRadius="4dp" />-->
+<!--    </LinearLayout>-->
+
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
@@ -26,7 +52,7 @@
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
         android:layout_height="52dp"
-        app:backgroundColor="@color/colorPrimary"
+        app:backgroundColor="#ff6188"
         app:menu="@menu/menu_bottom"
         app:layout_constraintBottom_toBottomOf="parent" />
 

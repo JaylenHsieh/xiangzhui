@@ -9,8 +9,6 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.app.SearchManager;
 import android.content.Context;
-import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -31,13 +29,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setNavigationBarColor(this.getColor(R.color.colorPrimary));
         setContentView(R.layout.activity_main);
         initToolbar();
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
-        HomeFragment homeFragment = new HomeFragment();
-        transaction.add(R.id.container,homeFragment).commit();
+
 
         SmoothBottomBar bottomBar = findViewById(R.id.bottomBar);
         bottomBar.setOnItemSelectedListener(new OnItemSelectedListener() {
@@ -46,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
                 switch (i) {
+                    case 0:
+                        break;
                     case 1:
-                        ClassificationFragment classificationFragment = new ClassificationFragment();
-                        transaction.replace(R.id.container, classificationFragment).commit();
                         break;
                     case 2:
                         DesignFragment designFragment = new DesignFragment();
@@ -63,8 +57,6 @@ public class MainActivity extends AppCompatActivity {
                         transaction.replace(R.id.container,mineFragment).commit();
                         break;
                     default:
-                        HomeFragment homeFragment = new HomeFragment();
-                        transaction.replace(R.id.container, homeFragment).commit();
                         break;
                 }
             }

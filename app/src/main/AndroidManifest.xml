@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hsieh.xiangzhui">
 
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,11 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/ThemeNoActionBar">
-        <activity android:name=".ui.MuralDetailActivity"></activity>
-        <activity android:name=".ui.MeetingReminderActivity" />
-        <activity android:name=".ui.MyCollectionActivity" />
-        <activity android:name=".ui.MyDesignActivity" />
-        <activity android:name=".ui.WeatherActivity" />
         <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
