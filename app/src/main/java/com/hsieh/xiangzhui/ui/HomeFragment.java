@@ -1,6 +1,7 @@
 package com.hsieh.xiangzhui.ui;
 
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 import com.hsieh.xiangzhui.R;
 
 
@@ -20,9 +22,6 @@ import com.hsieh.xiangzhui.R;
  * A simple {@link Fragment} subclass.
  */
 public class HomeFragment extends Fragment {
-
-    private TabLayout tabLayout;
-    private ViewPager2 viewPager;
 
 
     public HomeFragment() {
@@ -33,30 +32,24 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        tabLayout = view.findViewById(R.id.home_tabs);
-        viewPager = view.findViewById(R.id.home_viewpager);
-        viewPager.setAdapter(new FragmentStateAdapter() {
+        TabLayout tabLayout = view.findViewById(R.id.home_tabs);
+        ViewPager2 viewPager = view.findViewById(R.id.home_viewpager);
+        viewPager.setAdapter(new FragmentStateAdapter(this) {
             @NonNull
             @Override
             public Fragment createFragment(int position) {
                 switch (position){
-                    case 0:
-                        return new RecommendFragment();
-                        break;
                     case 1:
                         return new OvercomePovertyFragment();
-                        break;
                     case 2:
                         return new RuralCivilizationFragment();
-                        break;
                     case 3:
                         return new DutifulFragment();
-                        break;
                     case 4:
                         return new NewSpiritFragment();
-                        break;
+                    default:
+                        return new RecommendFragment();
                 }
             }
 
@@ -65,6 +58,31 @@ public class HomeFragment extends Fragment {
                 return 5;
             }
         });
+
+        TabLayoutMediator tabLayoutMediator = new TabLayoutMediator(tabLayout, viewPager, new TabLayoutMediator.TabConfigurationStrategy() {
+            @Override
+            public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
+                switch (position){
+                    case 0:
+                        tab.setText(getContext().getString(R.string.recommend));
+                        break;
+                    case 1:
+                        tab.setText(getContext().getString(R.string.poverty_alleviation));
+                        break;
+                    case 2:
+                        tab.setText(getContext().getString(R.string.rural_civilization));
+                        break;
+                    case 3:
+                        tab.setText(getContext().getString(R.string.filial_piety));
+                        break;
+                    case 4:
+                        tab.setText(getContext().getString(R.string.new_trends));
+                        break;
+                }
+            }
+        });
+        tabLayoutMediator.attach();
+
         return view;
     }
 
