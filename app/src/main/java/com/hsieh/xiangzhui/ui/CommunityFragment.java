@@ -53,7 +53,7 @@ public class CommunityFragment extends Fragment {
 
     private void initList() {
         for (int i = 0; i < 10; i++) {
-            Community community1 = new Community(R.mipmap.avatar,
+            Community community1 = new Community(R.mipmap.img_avatar_default,
                     "啊呜软",
                     "4:05pm",
                     getResources().getString(R.string.community_content1));
