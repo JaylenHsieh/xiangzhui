@@ -108,8 +108,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:text="2510 mm"
             android:textSize="16sp"
-            android:text="2.51 m"
             app:layout_constraintBottom_toBottomOf="@+id/textView5"
             app:layout_constraintStart_toEndOf="@+id/textView5"
             app:layout_constraintTop_toTopOf="@+id/textView5" />
@@ -128,7 +128,7 @@
             android:id="@+id/tvWidth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1.52 m"
+            android:text="1520 m"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@+id/textView7"
             app:layout_constraintStart_toStartOf="@+id/tvLength"
@@ -140,7 +140,7 @@
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="32dp"
-            android:progress="60"
+            android:progress="50"
             app:layout_constraintBottom_toBottomOf="@+id/tvLength"
             app:layout_constraintEnd_toEndOf="@+id/pictureList"
             app:layout_constraintTop_toTopOf="@+id/tvLength" />
@@ -149,7 +149,7 @@
             android:id="@+id/seekBarWidth"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:progress="30"
+            android:progress="50"
             app:layout_constraintBottom_toBottomOf="@+id/tvWidth"
             app:layout_constraintStart_toStartOf="@+id/seekBarLength"
             app:layout_constraintTop_toTopOf="@+id/tvWidth" />
@@ -160,20 +160,21 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/text_seekBar"
-            app:layout_constraintEnd_toEndOf="@+id/pictureList"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
             app:layout_constraintTop_toBottomOf="@+id/seekBarWidth" />
 
         <TextView
+            android:id="@+id/tvSubmit"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:background="@drawable/bg_backgroud_commit"
+            android:gravity="center"
+            android:padding="12dp"
             android:text="@string/text_commit"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:gravity="center"
-            android:padding="8dp"
             app:layout_constraintEnd_toEndOf="@+id/inputTheme"
             app:layout_constraintStart_toStartOf="@+id/inputTheme"
             app:layout_constraintTop_toBottomOf="@+id/textView8" />
