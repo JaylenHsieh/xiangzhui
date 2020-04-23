@@ -125,7 +125,7 @@ public class DesignFragment extends Fragment {
                             e.printStackTrace();
                         }
                         ProgressDialogUtil.dismiss();
-                        Intent intent = new Intent(getContext(),MuralDetailActivity.class);
+                        Intent intent = new Intent(getContext(),NewMuralActivity.class);
                         getContext().startActivity(intent);
 
                     }

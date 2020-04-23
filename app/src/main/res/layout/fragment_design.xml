@@ -128,7 +128,7 @@
             android:id="@+id/tvWidth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1520 m"
+            android:text="1520 mm"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@+id/textView7"
             app:layout_constraintStart_toStartOf="@+id/tvLength"

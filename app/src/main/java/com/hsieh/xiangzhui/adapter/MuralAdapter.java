@@ -12,7 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.hsieh.xiangzhui.Bean.Mural;
+import com.hsieh.xiangzhui.bean.Mural;
 import com.hsieh.xiangzhui.R;
 import com.hsieh.xiangzhui.ui.MuralDetailActivity;
 
@@ -54,6 +54,7 @@ public class MuralAdapter extends RecyclerView.Adapter<MuralAdapter.ViewHolder> 
                 Mural mural = mMuralList.get(position);
                 Intent intent = new Intent(parent.getContext(), MuralDetailActivity.class);
                 Bundle bundle = new Bundle();
+                bundle.putInt("mural_image",mural.getImageId());
                 bundle.putString("mural_theme",mural.getMuralTheme());
                 bundle.putString("mural_class",mural.getMuralClass());
                 bundle.putFloat("mural_score", (float) mural.getMuralScore());

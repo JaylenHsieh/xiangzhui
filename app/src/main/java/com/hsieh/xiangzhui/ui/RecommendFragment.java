@@ -10,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.hsieh.xiangzhui.Bean.Mural;
+import com.hsieh.xiangzhui.bean.Mural;
 import com.hsieh.xiangzhui.R;
 import com.hsieh.xiangzhui.adapter.MuralAdapter;
 

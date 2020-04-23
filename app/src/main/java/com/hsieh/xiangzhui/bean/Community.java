@@ -1,4 +1,4 @@
-package com.hsieh.xiangzhui.Bean;
+package com.hsieh.xiangzhui.bean;
 
 public class Community {
     private int imgId;

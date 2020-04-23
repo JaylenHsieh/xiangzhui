@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.hsieh.xiangzhui.Bean.Classification;
+import com.hsieh.xiangzhui.bean.Classification;
 import com.hsieh.xiangzhui.R;
 
 import java.util.List;

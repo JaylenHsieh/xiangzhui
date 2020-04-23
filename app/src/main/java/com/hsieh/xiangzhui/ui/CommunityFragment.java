@@ -7,16 +7,19 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.text.format.Time;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.hsieh.xiangzhui.Bean.Community;
+import com.hsieh.xiangzhui.bean.Community;
 import com.hsieh.xiangzhui.R;
 import com.hsieh.xiangzhui.adapter.CommunityAdapter;
 
-import java.lang.reflect.Array;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -52,12 +55,26 @@ public class CommunityFragment extends Fragment {
     }
 
     private void initList() {
-        for (int i = 0; i < 10; i++) {
-            Community community1 = new Community(R.mipmap.img_avatar_default,
-                    "啊呜软",
-                    "4:05pm",
-                    getResources().getString(R.string.community_content1));
-            communityList.add(community1);
+        Calendar c = Calendar.getInstance();
+        SimpleDateFormat sdf = new SimpleDateFormat("MM月dd日");
+        String time = sdf.format(c.getTime());
+        for (int i = 0; i<3;i++){
+            Community c1 = new Community(R.mipmap.img_avatar_default,"张大爷", time + " 14:38",getString(R.string.news1));
+            Community c2 = new Community(R.mipmap.img_avatar_default,"王大爷",time+" 14:36",getString(R.string.news2));
+            Community c3 = new Community(R.mipmap.paddy,"赵大妈",time + " 14:29",getString(R.string.news3));
+            Community c4 = new Community(R.mipmap.img_avatar_default,"张大爷",time+" 14:24",getString(R.string.news4));
+            Community c5 = new Community(R.mipmap.mountain,"大力村李书记",time+" 14:21",getString(R.string.news5));
+            Community c6 = new Community(R.mipmap.tea,"长胜村朱村长",time+" 14:17",getString(R.string.news6));
+            Community c7 = new Community(R.mipmap.boat,"三港村陆女士",time+" 14:12",getString(R.string.news7));
+            Community c8 = new Community(R.mipmap.tree,"解放村阮先生",time+" 14:01",getString(R.string.news8));
+            communityList.add(c5);
+            communityList.add(c2);
+            communityList.add(c3);
+            communityList.add(c4);
+            communityList.add(c1);
+            communityList.add(c6);
+            communityList.add(c7);
+            communityList.add(c8);
         }
     }
 

@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.textview.MaterialTextView;
-import com.hsieh.xiangzhui.Bean.Community;
+import com.hsieh.xiangzhui.bean.Community;
 import com.hsieh.xiangzhui.R;
 
 import java.util.List;
