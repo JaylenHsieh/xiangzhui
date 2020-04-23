@@ -89,13 +89,13 @@
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
     <TextView
-        style="@style/ButtonStyle"
         android:id="@+id/tvConfirm"
+        style="@style/ButtonStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="48dp"
         android:background="@drawable/bg_background_commit"
         android:text="确定"
         app:layout_constraintEnd_toEndOf="parent"

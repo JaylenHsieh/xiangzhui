@@ -134,21 +134,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="2510"
+        android:text="2510 mm"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView5"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toTopOf="@+id/textView5" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="mm"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/tvLength"
-        app:layout_constraintStart_toEndOf="@+id/tvLength"
-        app:layout_constraintTop_toTopOf="@+id/tvLength" />
 
     <TextView
         android:id="@+id/textView7"
@@ -164,7 +154,7 @@
         android:id="@+id/tvWidth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1210"
+        android:text="1210 mm"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView7"
         app:layout_constraintStart_toStartOf="@+id/tvLength"
@@ -172,29 +162,18 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="mm"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/tvWidth"
-        app:layout_constraintStart_toEndOf="@+id/tvWidth"
-        app:layout_constraintTop_toTopOf="@+id/tvWidth" />
-
-    <TextView
         android:id="@+id/startDraw"
         style="@style/ButtonStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="48dp"
         android:background="@drawable/bg_background_commit"
         android:text="@string/start_draw"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintTop_toBottomOf="@+id/tvWidth" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

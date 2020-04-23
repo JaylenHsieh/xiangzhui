@@ -47,8 +47,8 @@ public class NewMuralActivity extends AppCompatActivity {
         muralTheme.setText(intent.getStringExtra("mural_theme"));
         pictureClass.setText(intent.getStringExtra("picture_class"));
         articleClass.setText(intent.getStringExtra("article_class"));
-        tvLength.setText(String.valueOf(intent.getIntExtra("mural_length", 2233)));
-        tvWidth.setText(String.valueOf(intent.getIntExtra("mural_width", 1267)));
+        tvLength.setText(intent.getStringExtra("mural_length"));
+        tvWidth.setText(intent.getStringExtra("mural_width"));
         startDraw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

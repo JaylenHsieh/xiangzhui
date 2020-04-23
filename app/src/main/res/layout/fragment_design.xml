@@ -165,12 +165,14 @@
 
         <TextView
             android:id="@+id/tvSubmit"
+            style="@style/ButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
             android:background="@drawable/bg_background_commit"
             android:text="@string/text_commit"
-            style="@style/ButtonStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/inputTheme"
             app:layout_constraintStart_toStartOf="@+id/inputTheme"
             app:layout_constraintTop_toBottomOf="@+id/textView8" />

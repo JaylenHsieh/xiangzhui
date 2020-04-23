@@ -140,8 +140,8 @@ public class DesignFragment extends Fragment {
                                     bundle.putString("mural_theme",edMuralTheme.getText().toString());
                                     bundle.putString("article_class",articleClass);
                                     bundle.putString("picture_class",pictureClass);
-                                    bundle.putInt("mural_length",2233);
-                                    bundle.putInt("mural_width",1267);
+                                    bundle.putString("mural_length",tvLength.getText().toString());
+                                    bundle.putString("mural_width",tvWidth.getText().toString());
                                     intent.putExtras(bundle);
                                     getContext().startActivity(intent);
                                 }

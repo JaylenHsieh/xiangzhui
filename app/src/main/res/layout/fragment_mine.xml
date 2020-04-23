@@ -40,7 +40,10 @@
             android:textStyle="bold" />
 
         <include
-            layout="@layout/layout_profile_us"/>
+            layout="@layout/layout_profile_us"
+            android:layout_marginBottom="36dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
     </LinearLayout>
 
 </ScrollView>
