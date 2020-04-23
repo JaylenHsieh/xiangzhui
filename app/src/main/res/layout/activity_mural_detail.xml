@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".ui.MuralDetailActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="0dp"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="壁画详情"
+        app:titleTextColor="@color/white" />
+
     <ImageView
         android:id="@+id/muralImg"
         android:layout_width="0dp"
@@ -18,8 +29,9 @@
         android:scaleType="fitXY"
         android:src="@mipmap/img2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
 
     <TextView
         android:id="@+id/textView9"

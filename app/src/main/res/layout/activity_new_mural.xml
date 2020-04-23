@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".ui.MuralDetailActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="设计壁画"
+        app:titleTextColor="@color/white" />
+
     <ImageView
         android:id="@+id/muralImg"
         android:layout_width="0dp"
@@ -19,7 +30,7 @@
         android:src="@mipmap/img3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
 
     <TextView
         android:id="@+id/textView9"
@@ -58,43 +69,43 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/mural_class"
+        android:layout_marginTop="12dp"
+        android:text="@string/picture_class"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <TextView
-        android:id="@+id/tvMuralClass"
+        android:id="@+id/tvPictureClass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="花鸟、孩童"
+        android:text="自由"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView12"
         app:layout_constraintStart_toEndOf="@+id/textView12"
         app:layout_constraintTop_toTopOf="@+id/textView12" />
 
-    <!--    <TextView-->
-    <!--        android:id="@+id/textView13"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="12dp"-->
-    <!--        android:text="@string/mural_score"-->
-    <!--        android:textSize="18sp"-->
-    <!--        app:layout_constraintStart_toStartOf="@+id/textView12"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/textView12" />-->
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/article_class"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
-    <!--    <TextView-->
-    <!--        android:id="@+id/tvMuralScore"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginStart="8dp"-->
-    <!--        android:text="4.6"-->
-    <!--        android:textSize="18sp"-->
-    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView13"-->
-    <!--        app:layout_constraintStart_toEndOf="@+id/textView13"-->
-    <!--        app:layout_constraintTop_toTopOf="@+id/textView13" />-->
+    <TextView
+        android:id="@+id/tvArticleClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="励志文章"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/textView14" />
 
     <TextView
         android:id="@+id/textView4"
@@ -161,6 +172,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
+        android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -169,6 +181,20 @@
         app:layout_constraintBottom_toBottomOf="@+id/tvWidth"
         app:layout_constraintStart_toEndOf="@+id/tvWidth"
         app:layout_constraintTop_toTopOf="@+id/tvWidth" />
+
+    <TextView
+        android:id="@+id/startDraw"
+        style="@style/ButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/bg_background_commit"
+        android:text="@string/start_draw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

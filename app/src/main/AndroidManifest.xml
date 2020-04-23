@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/ThemeNoActionBar">
-        <activity android:name=".ui.NewMuralActivity"></activity>
+        <activity android:name=".ui.OrderActivity"></activity>
+        <activity android:name=".ui.NewMuralActivity" />
         <activity android:name=".ui.MuralDetailActivity" />
         <activity android:name=".ui.MeetingReminderActivity" />
         <activity android:name=".ui.MyCollectionActivity" />

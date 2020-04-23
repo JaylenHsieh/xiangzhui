@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".ui.MyDesignActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="0dp"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="我的收藏"
+        app:titleTextColor="@color/white" />
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"

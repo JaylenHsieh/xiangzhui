@@ -8,7 +8,7 @@
         <item>发展成果</item>
         <item>村容村貌</item>
         <item>致富经验</item>
-        <item>......</item>
+        <item>随机</item>
     </string-array>
 
     <string-array name="picture_type">
@@ -19,6 +19,6 @@
         <item>致富</item>
         <item>法制</item>
         <item>文化</item>
-        <item>......</item>
+        <item>随机</item>
     </string-array>
 </resources>

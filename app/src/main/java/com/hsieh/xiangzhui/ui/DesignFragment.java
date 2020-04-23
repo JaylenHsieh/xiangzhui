@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.Spinner;
@@ -28,6 +29,8 @@ import java.text.NumberFormat;
  */
 public class DesignFragment extends Fragment {
 
+    private String articleClass;
+    private String pictureClass;
 
     public DesignFragment() {
         // Required empty public constructor
@@ -35,7 +38,7 @@ public class DesignFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_design, container, false);
         Spinner articleList = view.findViewById(R.id.articleList);
@@ -45,10 +48,11 @@ public class DesignFragment extends Fragment {
         TextView submit = view.findViewById(R.id.tvSubmit);
         final TextView tvLength = view.findViewById(R.id.tvLength);
         final TextView tvWidth = view.findViewById(R.id.tvWidth);
+        final EditText edMuralTheme = view.findViewById(R.id.inputTheme);
         articleList.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
+                articleClass = parent.getItemAtPosition(position).toString();
             }
 
             @Override
@@ -60,7 +64,7 @@ public class DesignFragment extends Fragment {
         pictureList.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
+                pictureClass = parent.getItemAtPosition(position).toString();
             }
 
             @Override
@@ -72,7 +76,7 @@ public class DesignFragment extends Fragment {
         sbLength.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                double length = (progress / 60.0 + 1.5) * 1000;
+                double length = (progress / 60.0 + 1.4) * 1000;
                 NumberFormat ddf1 = NumberFormat.getNumberInstance();
                 ddf1.setMaximumFractionDigits(0);
                 String s = ddf1.format(length);
@@ -82,19 +86,19 @@ public class DesignFragment extends Fragment {
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-                Toast.makeText(getContext(), "开始微调长度", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getContext(), "开始微调长度", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                Toast.makeText(getContext(), "结束微调长度", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getContext(), "结束微调长度", Toast.LENGTH_SHORT).show();
             }
         });
 
         sbWidth.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                double width = (progress / 75.0 + 1.2) * 1000;
+                double width = (progress / 75.0 + 0.6) * 1000;
                 NumberFormat ddf1 = NumberFormat.getNumberInstance();
                 ddf1.setMaximumFractionDigits(0);
                 String s = ddf1.format(width);
@@ -103,12 +107,12 @@ public class DesignFragment extends Fragment {
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-                Toast.makeText(getContext(), "开始微调宽度", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getContext(), "开始微调宽度", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                Toast.makeText(getContext(), "开始微调宽度", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getContext(), "开始微调宽度", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -124,9 +128,25 @@ public class DesignFragment extends Fragment {
                         } catch (InterruptedException e){
                             e.printStackTrace();
                         }
-                        ProgressDialogUtil.dismiss();
-                        Intent intent = new Intent(getContext(),NewMuralActivity.class);
-                        getContext().startActivity(intent);
+                        getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                ProgressDialogUtil.dismiss();
+                                Intent intent = new Intent(getContext(),NewMuralActivity.class);
+                                Bundle bundle = new Bundle();
+                                if (edMuralTheme.getText().toString().equals("")){
+                                    Toast.makeText(getContext(), "好像忘记填写主题了……", Toast.LENGTH_SHORT).show();
+                                }else {
+                                    bundle.putString("mural_theme",edMuralTheme.getText().toString());
+                                    bundle.putString("article_class",articleClass);
+                                    bundle.putString("picture_class",pictureClass);
+                                    bundle.putInt("mural_length",2233);
+                                    bundle.putInt("mural_width",1267);
+                                    intent.putExtras(bundle);
+                                    getContext().startActivity(intent);
+                                }
+                            }
+                        });
 
                     }
                 }).start();
@@ -136,6 +156,7 @@ public class DesignFragment extends Fragment {
 
         return view;
     }
+
 
 
 }
