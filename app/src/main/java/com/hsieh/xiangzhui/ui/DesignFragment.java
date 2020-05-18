@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.RadioGroup;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -46,6 +47,7 @@ public class DesignFragment extends Fragment {
         SeekBar sbLength = view.findViewById(R.id.seekBarLength);
         SeekBar sbWidth = view.findViewById(R.id.seekBarWidth);
         TextView submit = view.findViewById(R.id.tvSubmit);
+        RadioGroup rgIO = view.findViewById(R.id.radioGroup);
         final TextView tvLength = view.findViewById(R.id.tvLength);
         final TextView tvWidth = view.findViewById(R.id.tvWidth);
         final EditText edMuralTheme = view.findViewById(R.id.inputTheme);
@@ -58,6 +60,18 @@ public class DesignFragment extends Fragment {
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
+            }
+        });
+
+        rgIO.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                switch (checkedId){
+                    case R.id.radioIn:
+                        break;
+                    case R.id.radioOut:
+                        break;
+                }
             }
         });
 

@@ -46,15 +46,16 @@ public class ChinaDreamFragment extends Fragment {
 
     private void initList() {
         for (int i = 0; i < 2; i++){
-            Classification pic1 = new Classification(R.mipmap.img5);
-            Classification pic2 = new Classification(R.mipmap.img6);
-            Classification pic3 = new Classification(R.mipmap.img7);
-            Classification pic4 = new Classification(R.mipmap.img8);
-            Classification pic5 = new Classification(R.mipmap.img9);
-            Classification pic6 = new Classification(R.mipmap.img10);
-            Classification pic7 = new Classification(R.mipmap.img11);
-            Classification pic8 = new Classification(R.mipmap.img12);
-            Classification pic9 = new Classification(R.mipmap.img13);
+            Classification pic1 = new Classification(R.mipmap.xd1);
+            Classification pic2 = new Classification(R.mipmap.xd2);
+            Classification pic3 = new Classification(R.mipmap.xd3);
+            Classification pic4 = new Classification(R.mipmap.xd4);
+            Classification pic5 = new Classification(R.mipmap.xd5);
+            Classification pic6 = new Classification(R.mipmap.xd6);
+            Classification pic7 = new Classification(R.mipmap.xd7);
+            Classification pic8 = new Classification(R.mipmap.xd8);
+            Classification pic9 = new Classification(R.mipmap.xd9);
+            Classification pic10 = new Classification(R.mipmap.xd10);
             mChinaDreamList.add(pic1);
             mChinaDreamList.add(pic2);
             mChinaDreamList.add(pic3);
@@ -64,6 +65,7 @@ public class ChinaDreamFragment extends Fragment {
             mChinaDreamList.add(pic7);
             mChinaDreamList.add(pic8);
             mChinaDreamList.add(pic9);
+            mChinaDreamList.add(pic10);
         }
     }
 }
