@@ -8,10 +8,9 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/ThemeNoActionBar">
-        <activity android:name=".ui.OrderActivity"></activity>
+        <activity android:name=".ui.OrderActivity"/>
         <activity android:name=".ui.NewMuralActivity" />
         <activity android:name=".ui.MuralDetailActivity" />
         <activity android:name=".ui.MeetingReminderActivity" />

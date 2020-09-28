@@ -41,7 +41,7 @@ public class ClassificationFragment extends Fragment {
                     case 2:
                         return new NationalUnityFragment();
                     case 3:
-                        return new TheTrueFragment();
+                        return new ChinaDreamFragment();
                     case 4:
                         return new RemainTrueFragment();
                     default:
